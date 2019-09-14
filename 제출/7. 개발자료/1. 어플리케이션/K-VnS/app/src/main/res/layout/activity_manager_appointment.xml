@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbar_manager_appointment"
+        layout="@layout/toolbar"
+        android:layout_width="380dp"
+        android:layout_height="61dp" />
+
+    <LinearLayout
+        android:id="@+id/manager_appointment_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="569dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="63dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/delete_manager_button"
+                android:layout_width="112dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="260dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:background="#94cdae"
+                android:text="삭제"
+                android:textColor="@android:color/background_light"
+                android:textStyle="normal|bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="370dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <ScrollView
+                android:layout_width="355dp"
+                android:layout_height="390dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@color/colorAccent">
+
+                <LinearLayout
+                    android:id="@+id/manager_itemLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <RadioGroup
+                        android:id="@+id/radio_group_vote"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    </RadioGroup>
+
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingLeft="50dp">
+
+            <Button
+                android:id="@+id/manager_appointment_button"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:background="#94cdae"
+                android:text="임명"
+                android:textColor="@android:color/background_light"
+                android:textStyle="normal|bold" />
+
+            <Button
+                android:id="@+id/manager_cancel_button"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="50dp"
+                android:layout_weight="1"
+                android:background="#94cdae"
+                android:text="취소"
+                android:textColor="@android:color/background_light"
+                android:textStyle="normal|bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/manage_menu1"
+        android:title="사용자 승인">
+    </item>
+    <item
+        android:id="@+id/manage_menu2"
+        android:title="관리자 임명">
+    </item>
+    <item
+        android:id="@+id/manage_menu3"
+        android:title="관리자 권한요청">
+    </item>
+    <item
+        android:id="@+id/manage_menu4"
+        android:title="회원정보 수정">
+    </item>
+</menu>

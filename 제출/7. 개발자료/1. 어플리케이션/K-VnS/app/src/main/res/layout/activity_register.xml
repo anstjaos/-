@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="81dp"
+    android:background="@color/colorBackground">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
+    <EditText
+        android:id="@+id/nameText"
+        android:layout_width="176dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="65dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="192dp"
+        tools:layout_editor_absoluteY="7dp" />
+
+    <EditText
+        android:id="@+id/passwordText"
+        android:layout_width="176dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/nameText"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/nameText"
+        android:layout_marginTop="124dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:password="true"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="192dp"
+        tools:layout_editor_absoluteY="66dp" />
+
+    <EditText
+        android:id="@+id/passwordCheckText"
+        android:layout_width="176dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/nameText"
+        android:layout_alignStart="@+id/nameText"
+        android:layout_alignTop="@+id/passwordCheck"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:password="true"
+        tools:layout_editor_absoluteX="192dp"
+        tools:layout_editor_absoluteY="66dp" />
+
+    <EditText
+        android:id="@+id/studentIdText"
+        android:layout_width="176dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/nameText"
+        android:layout_alignStart="@+id/nameText"
+        android:layout_alignTop="@+id/studentId"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="192dp"
+        tools:layout_editor_absoluteY="66dp" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/nameText"
+        android:text="이름"
+        android:textSize="25sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp"
+        tools:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/passwordText"
+        android:text="비밀번호"
+        android:textSize="25sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="76dp"
+        tools:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/passwordCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/name"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/name"
+        android:layout_marginTop="184dp"
+        android:text="비밀번호 확인"
+        android:textSize="25sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="76dp"
+        tools:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/studentId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/name"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/name"
+        android:layout_marginTop="242dp"
+        android:text="학번"
+        android:textSize="25sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="76dp"
+        tools:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/multiMajor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/name"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/name"
+        android:layout_marginBottom="224dp"
+        android:text="복수 전공 여부"
+        android:textSize="25sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="76dp"
+        tools:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/department"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/name"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/name"
+        android:layout_marginBottom="163dp"
+        android:text="학과"
+        android:textSize="25sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="76dp"
+        tools:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/name"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/name"
+        android:layout_marginBottom="107dp"
+        android:text="분류"
+        android:textSize="25sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="76dp"
+        tools:textColor="@android:color/black" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="186dp"
+        android:layout_height="53dp"
+        android:layout_alignEnd="@+id/nameText"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="216dp"
+        android:orientation="horizontal"
+        android:layout_alignRight="@+id/nameText">
+
+        <RadioButton
+            android:id="@+id/yesButton"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/multiMajor"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:buttonTint="#ff0000"
+            android:text="Yes" />
+
+        <RadioButton
+            android:id="@+id/noButton"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/multiMajor"
+            android:layout_marginRight="29dp"
+            android:layout_marginTop="10dp"
+            android:buttonTint="#ff0000"
+            android:text="No" />
+    </RadioGroup>
+
+    <Spinner
+        android:id="@+id/departmentSpinner"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/nameText"
+        android:layout_alignStart="@+id/nameText"
+        android:layout_alignTop="@+id/department"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:entries="@array/전공" />
+
+    <Spinner
+        android:id="@+id/departmentSpinner2"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/department"
+        android:layout_marginLeft="84dp"
+        android:layout_marginStart="84dp"
+        android:entries="@array/전공"
+        android:visibility="invisible" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="200dp"
+        android:layout_height="85dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/type"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/studentButton"
+                android:layout_width="86dp"
+                android:layout_height="35dp"
+                android:layout_alignStart="@+id/nameText"
+                android:layout_alignLeft="@+id/nameText"
+                android:layout_alignTop="@+id/type"
+                android:layout_marginRight="20dp"
+                android:buttonTint="#ff0000"
+                android:text="학부생" />
+
+            <RadioButton
+                android:id="@+id/professorButton"
+                android:layout_width="86dp"
+                android:layout_height="35dp"
+                android:layout_below="@+id/type"
+                android:layout_alignStart="@+id/nameText"
+                android:layout_alignLeft="@+id/nameText"
+                android:layout_marginRight="20dp"
+                android:buttonTint="#ff0000"
+                android:text="교수" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/employeeButton"
+                android:layout_width="86dp"
+                android:layout_height="35dp"
+                android:layout_below="@+id/type"
+                android:layout_alignEnd="@+id/nameText"
+                android:layout_alignRight="@+id/nameText"
+                android:layout_marginRight="20dp"
+                android:buttonTint="#ff0000"
+                android:text="임직원" />
+
+            <RadioButton
+                android:id="@+id/graduateStudentButton"
+                android:layout_width="86dp"
+                android:layout_height="35dp"
+                android:layout_alignTop="@+id/type"
+                android:layout_alignEnd="@+id/nameText"
+                android:layout_alignRight="@+id/nameText"
+                android:buttonTint="#ff0000"
+                android:text="대학원생" />
+        </LinearLayout>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/studentId"
+        android:layout_toRightOf="@+id/studentId"
+        android:text="등록 완료"
+        android:textColor="@android:color/background_light"
+        android:textStyle="normal|bold"
+        android:background="#94cdae" />
+
+    <Button
+        android:id="@+id/cancelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="58dp"
+        android:layout_marginRight="58dp"
+        android:background="#94cdae"
+        android:text="취소"
+        android:textColor="@android:color/background_light"
+        android:textStyle="normal|bold"
+        />
+
+</RelativeLayout>
